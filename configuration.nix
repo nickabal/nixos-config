@@ -6,17 +6,18 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [ 
       ./hardware-configuration.nix
       ./packages.nix
     ];
 
   # Use the gummiboot efi boot loader.
+  # For late 2009 imac
   boot.loader.gummiboot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless.
+  networking.hostName = "nixos.nickabal.com"; 
+  networking.wireless.enable = false;  
 
   # Select internationalisation properties.
   i18n = {
@@ -25,30 +26,22 @@
     defaultLocale = "en_US.UTF-8";
   };
 
-  # List packages installed in system profile. To search by name, run:
-  # -env -qaP | grep wget
-#  environment.systemPackages = with pkgs; [
-#    vim
-#    rsync
-#    wget
-#  ];
-
   # List services that you want to enable:
-
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "us";
-  #services.xserver.xkbOptions = "eurosign:e";
 
   # Enable the KDE Desktop Environment.
   services.xserver.displayManager.kdm.enable = true;
   services.xserver.desktopManager.kde4.enable = true;
+
+  # Security settings
+  security.sudo.wheelNeedsPassword = false;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.extraUsers.nick = {
