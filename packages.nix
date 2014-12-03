@@ -13,9 +13,12 @@
     rsync     
     wget   
     curl
+    unzip
+    p7zip
     git
     xfce.terminal
     nmap
+    telnet
     #hping
     xchat
     tor
@@ -33,8 +36,16 @@
     nodePackages.statsd
     nixops
     linuxPackages.virtualbox
-    thunderbird
     #linuxPackages_3_17.virtualbox
+    thunderbird
+    sl
+    kde4.kcalc
+    linuxPackages.virtualbox
+    powertop
+    latencytop
+    redshift
+    nfsUtils
+    s6Dns
   ];  
 
 }

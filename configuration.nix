@@ -9,6 +9,8 @@
     [ 
       ./hardware-configuration.nix
       ./packages.nix
+      #./containers.nix
+      <nixos/modules/programs/virtualbox.nix>
     ];
 
   # Use the gummiboot efi boot loader.
@@ -55,4 +57,7 @@
      home = "/home/nick";
      shell = "/run/current-system/sw/bin/bash";
    };
+
+ users.extraGroups.vboxusers.members = [ "nick" ];
+
 }
