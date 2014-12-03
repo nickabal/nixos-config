@@ -24,6 +24,7 @@
     firefox
     #icecat3
     python
+    pidgin
     docker
     nodePackages.npm
     nodePackages.npm2nix
@@ -31,7 +32,9 @@
     nodePackages.selenium-webdriver
     nodePackages.statsd
     nixops
-    linuxPackages_3_17.virtualbox
+    linuxPackages.virtualbox
+    thunderbird
+    #linuxPackages_3_17.virtualbox
   ];  
 
 }

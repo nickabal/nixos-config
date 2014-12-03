@@ -26,6 +26,8 @@
     defaultLocale = "en_US.UTF-8";
   };
 
+  time.timeZone = "America/Los_Angeles";
+
   # List services that you want to enable:
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
@@ -53,5 +55,4 @@
      home = "/home/nick";
      shell = "/run/current-system/sw/bin/bash";
    };
-
 }
