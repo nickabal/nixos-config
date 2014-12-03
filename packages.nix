@@ -13,9 +13,12 @@
     rsync     
     wget   
     curl
+    unzip
+    p7zip
     git
     xfce.terminal
     nmap
+    telnet
     #hping
     xchat
     tor
@@ -31,7 +34,15 @@
     nodePackages.selenium-webdriver
     nodePackages.statsd
     nixops
-    linuxPackages_3_17.virtualbox
+    sl
+    kde4.kcalc
+    linuxPackages.virtualbox
+    #linuxPackages_3_17.virtualbox
+    powertop
+    latencytop
+    redshift
+    nfsUtils
+    s6Dns
   ];  
 
 }
