@@ -27,6 +27,7 @@
     firefox
     #icecat3
     python
+    pidgin
     docker
     nodePackages.npm
     nodePackages.npm2nix
@@ -34,10 +35,12 @@
     nodePackages.selenium-webdriver
     nodePackages.statsd
     nixops
+    linuxPackages.virtualbox
+    #linuxPackages_3_17.virtualbox
+    thunderbird
     sl
     kde4.kcalc
     linuxPackages.virtualbox
-    #linuxPackages_3_17.virtualbox
     powertop
     latencytop
     redshift
