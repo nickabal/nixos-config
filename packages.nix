@@ -42,6 +42,7 @@
     latencytop
     redshift
     nfsUtils
+    traceroute
     s6Dns
   ];  
 
