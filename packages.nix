@@ -26,6 +26,7 @@
     openconnect 
     firefox
     #icecat3
+    mplayer
     python
     pidgin
     docker
