@@ -48,6 +48,9 @@
     nfsUtils
     traceroute
     s6Dns
+    conky
+    mpd
+    mpc
   ];  
 
 }
